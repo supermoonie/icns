@@ -6,6 +6,9 @@ package com.github.gino0631.icns;
  * The code is based on {@code org.apache.tika.parser.image.ICNSType}.
  */
 public enum IcnsType {
+    /**
+     *
+     */
     ICNS_32x32_1BIT_IMAGE("ICON", 32, 32, 1, false, false),
     ICNS_16x12_1BIT_IMAGE_AND_MASK("icm#", 16, 12, 1, true, false),
     ICNS_16x12_4BIT_IMAGE("icm4", 16, 12, 4, false, false),

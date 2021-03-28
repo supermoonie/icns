@@ -77,6 +77,7 @@ public class IcnsTest {
                 assertEquals(12, builtIcons.getEntries().size());
 
                 Path output = getResource("/").resolve("generated.icns");
+                System.out.println(output.toAbsolutePath().toString());
                 try (OutputStream os = Files.newOutputStream(output)) {
                     builtIcons.writeTo(os);
                 }

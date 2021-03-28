@@ -37,6 +37,7 @@ final class IcnsBuilderImpl implements IcnsBuilder {
         }
     }
 
+    @Override
     public IcnsBuilder add(IcnsType type, InputStream input) throws IOException {
         return add(type.getOsType(), input);
     }

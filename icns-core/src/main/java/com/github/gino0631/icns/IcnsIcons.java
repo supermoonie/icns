@@ -45,6 +45,7 @@ public interface IcnsIcons extends Writable, Closeable {
          * @return input stream
          * @throws IOException if an I/O error occurs
          */
+        @Override
         InputStream newInputStream() throws IOException;
     }
 
@@ -63,6 +64,7 @@ public interface IcnsIcons extends Writable, Closeable {
      * @param output output stream to write to
      * @throws IOException if an I/O error occurs
      */
+    @Override
     void writeTo(OutputStream output) throws IOException;
 
     /**
